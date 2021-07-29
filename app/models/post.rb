@@ -9,7 +9,6 @@ class Post < ApplicationRecord
 
     uri = URI.parse("https://language.googleapis.com/v1beta1/documents:analyzeSentiment?key=#{ENV["GOOGlE_API_KYE"]}")
     request = Net::HTTP::Post.new(uri)
-    byebug
     request.content_type = "application/json"
     request.body = ""
     request.body = {
