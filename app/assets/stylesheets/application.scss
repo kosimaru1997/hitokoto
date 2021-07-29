@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hiragino Maru Gothic ProN';
+}
+
+#hitokoto-new {
+  min-height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: image-url("cropbabyFTHG7710.jpg");
+  background-size: cover;
+  opacity: 0.7;
+  .title {
+    height: 150px;
+    padding-top: 10px;
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  .content {
+    text-align: center;
+    h2 {
+      margin-bottom: 10px;
+    }
+    .history {
+      margin-top: 20px;
+    }
+  }
+
+  .text-small {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+    line-height: 90px;
+    text-align: center;
+    color: #4b4a4a;
+    font-size: 20px;
+    font-weight: bold;
+    background: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    visibility: hidden;
+  }
+  .text-left {
+    width: 200px;
+  }
+  .text-left:hover .text-small {
+    visibility: visible;
+  }
+  .text-right {
+    width: 200px;
+    margin-left: auto;
+  }
+  .text-right:hover .text-small {
+    visibility: visible;
+  }
+
+}
