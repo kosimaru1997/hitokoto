@@ -6,7 +6,6 @@ class HitokotoController < ApplicationController
   def create
     post = Post.new(post_params)
     post.set_sentiment_with_title
-    # post.magnitude = sentiment[:magnitude]
     post.set_int_with_personality
     if post.save
       redirect_to hitokoto_path(post)
