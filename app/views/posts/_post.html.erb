@@ -1,0 +1,15 @@
+  <tr>
+  <td class="icon bird left">
+<%= link_to hitokoto_path(post), class: 'link' do %> 
+    <%= post.post %>
+<% end %>
+</td>
+    <td><%= post.personality_title %></td>
+    <td>
+      <% if post.sentiment == "ポジティブ" %>
+        <span class="positive">ポジティブ</span>
+      <% else %>
+        <span class="negative">ネガティブ</span>
+      <% end %>
+    </td>
+  </tr>

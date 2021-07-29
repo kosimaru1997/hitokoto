@@ -49,10 +49,10 @@
 .text-small {
   position: relative;
   display: inline-block;
-  margin-top: 50px;
+  // margin-top: 50px;
   margin-left: 100px;
   width: 100px;
-  height: 100px;
+  height:100px;
   line-height: 90px;
   text-align: center;
   color: #4b4a4a;
@@ -143,6 +143,66 @@ $purp: #9f68d0;
   }
 }
 
+.hitokoto-index {
+  min-height: 100vh;
+  background-image: image-url("babyFTHG7630_TP_V.jpg");
+  background-size: cover;
+
+  .title {
+     height: 50px;
+     padding-top: 10px;
+     margin-left: 20px;
+     width: 90%;
+   }
+
+   table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+    width: 95%;
+    background-color: rgba(199, 200, 202, 0.2);
+    margin-top: 60px;
+  }
+
+  .table-title {
+    background-color: rgba(224, 120, 102, 0.3);
+  }
+
+  .left {
+    text-align: left;
+  }
+  
+  table tr{
+    border-bottom: solid 1px #eee;
+    cursor: pointer;
+  }
+  
+  table tr:hover{
+    background-color: #d4f0fd;
+  }
+  
+  table th,table td{
+    text-align: center;
+    width: 33%;
+    padding: 10px 0;
+  }
+  
+  table td.icon{
+    background-size: 35px;
+    background-position: left 5px center;
+    background-repeat: no-repeat;
+  }
+  
+  // table td.icon.bird{
+  //   background-color: $red;
+  // }
+  
+  table td.icon.whale{
+    background-color: $blue;
+  }
+  
+}
+
 @media screen and (max-width: 468px){
 
   #hitokoto-new {
@@ -157,12 +217,16 @@ $purp: #9f68d0;
   .hitokoto-show {
     background-image: image-url("cropTS12.jpg");
     background-size: cover;
-
   }
 
- }
+  .hitokoto-index {
+    background-image: image-url("babyFTHG7630_TP_V.jpg");
+    background-size: contain;
+  }
 
- @media (max-width: 1028px) and (min-width: 468px){
+}
+
+@media (max-width: 1028px) and (min-width: 468px){
 
   #hitokoto-new {
     background-image: image-url("cropbabyFTHG77.jpg");
@@ -176,4 +240,16 @@ $purp: #9f68d0;
     background-image: image-url("cropTS12.jpg");
     background-size: contain;
   }
- }
+
+  .hitokoto-index {
+    background-image: image-url("babyFTHG7630_TP_V.jpg");
+    background-size: contain;
+  }
+}
+
+.positive {
+  color: $red;
+}
+.negative {
+  color: $blue;
+}

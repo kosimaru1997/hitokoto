@@ -1,2 +1,14 @@
-<h1>Hitokoto#index</h1>
-<p>Find me in app/views/hitokoto/index.html.erb</p>
+<div class="hitokoto-index">
+  <div class="title">
+    <h1>ひとこといちらん</h1>
+    <div class="text-right"><p class="text-small">ばぶ〜</p></div>
+  </div>
+    <table>
+      <tr class="table-title">
+        <th>ひとこと</th>
+        <th>パーソナリティ</th>
+        <th>感情</th>
+      </tr>
+      <%= render @posts %>
+    </table>
+</div>

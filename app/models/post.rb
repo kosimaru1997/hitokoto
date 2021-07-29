@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-
+  validates :post, presence: true, length: { minimum: 3, maximum: 20 }
 
   def set_sentiment_with_title
     sentiment = self.get_sentiment

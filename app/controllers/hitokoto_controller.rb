@@ -11,11 +11,12 @@ class HitokotoController < ApplicationController
     if post.save
       redirect_to hitokoto_path(post)
     else
-      redirect_to new
+      render "hitokoto/new"
     end
   end
 
   def index
+    @posts = Post.all.limit(7).order(id: "DESC") 
   end
 
   def show

@@ -9,7 +9,7 @@
 
   <div class="content">
     <h2>あなたのひとことから性格を診断します</h2>
-    <p>ひとことおねがいします</p>
+    <p>ひとことおねがいします(３文字以上２０文字以下)</p>
     <p>↓</p>
     <%= form_with model: @post, url: hitokoto_index_url, class: "rubbish-form" do |f| %>
       <%= f.text_field :post, placeholder: "楽しい", size: "30x20" %>
