@@ -12,7 +12,7 @@
     <p>ひとことおねがいします</p>
     <p>↓</p>
     <%= form_with model: @post, url: hitokoto_index_url, class: "rubbish-form" do |f| %>
-      <%= f.text_field :content, placeholder: "楽しい", size: "30x20" %>
+      <%= f.text_field :post, placeholder: "楽しい", size: "30x20" %>
       <%= submit_tag "chuck out" %>
     <% end %>
     <div class="history">
