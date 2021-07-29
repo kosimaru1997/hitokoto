@@ -5,11 +5,9 @@ class HitokotoController < ApplicationController
 
   def create
     post = Post.new(post_params)
-    sentiment = post.get_sentiment
-    post.score = sentiment[:score]
-    post.magnitude = sentiment[:magnitude]
-    post.random_int1 = rand(rand(200))
-    post.random_int2 = rand(rand(200))
+    post.set_sentiment_with_title
+    # post.magnitude = sentiment[:magnitude]
+    post.set_int_with_personality
     if post.save
       redirect_to hitokoto_path(post)
     else
@@ -21,6 +19,7 @@ class HitokotoController < ApplicationController
   end
 
   def show
+    @post = Post.find(params[:id])
   end
 
   def post_params

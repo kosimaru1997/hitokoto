@@ -43,36 +43,137 @@
       margin-top: 20px;
     }
   }
-
-  .text-small {
-    position: relative;
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 100px;
-    height: 100px;
-    line-height: 90px;
-    text-align: center;
-    color: #4b4a4a;
-    font-size: 20px;
-    font-weight: bold;
-    background: white;
-    border-radius: 50%;
-    box-sizing: border-box;
-    visibility: hidden;
-  }
-  .text-left {
-    width: 200px;
-  }
-  .text-left:hover .text-small {
-    visibility: visible;
-  }
-  .text-right {
-    width: 200px;
-    margin-left: auto;
-  }
-  .text-right:hover .text-small {
-    visibility: visible;
-  }
-
+  
 }
+
+.text-small {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 100px;
+  height: 100px;
+  line-height: 90px;
+  text-align: center;
+  color: #4b4a4a;
+  font-size: 20px;
+  font-weight: bold;
+  background: white;
+  border-radius: 50%;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+.text-left {
+  width: 200px;
+}
+.text-left:hover .text-small {
+  visibility: visible;
+}
+.text-right {
+  width: 200px;
+  margin-left: auto;
+}
+.text-right:hover .text-small {
+  visibility: visible;
+}
+
+.hitokoto-show {
+  background-image: image-url("cropTS1299.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+$red: #fd7473;
+$yellow: #fec951;
+$blue: #47b8e0;
+$purp: #9f68d0;
+
+.back-show {
+  background-color: rgba(61, 61, 61, 0.3);
+  min-height: 100vh;
+  
+    h2 {
+      color: white;
+      padding-top: 15px;
+      padding-left: 10px;
+    }
+}
+
+.wrapper{
+  width: 80%;
+  margin-left: 20px;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+.bar{
+  position: relative;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  .bar-info{
+    border-radius: 5px;
+    padding: 0.75rem;
+    background: $red;
+    color: rgba(255, 255, 255, 0.959);
+    width: 10%;
+    position: relative;
+    height: 30px;
+    transition: width 3.3s ease-in-out;
+    .percent{
+      float: right;
+    }
+    &.html{
+      background: linear-gradient($red, #FC688E), $red;
+    }
+    &.css{
+      background: linear-gradient($yellow, #FCAD44), $yellow;
+    }
+    &.js{
+      background: linear-gradient($blue, #28BEFA), $blue;
+    }
+    &.ps{
+      background: linear-gradient($purp, #BB68D0), $purp;
+    }
+
+    .graph-width {
+      width: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 468px){
+
+  #hitokoto-new {
+    background-image: image-url("cropbabyFTHG77.jpg");
+    background-size: cover;
+    opacity: 0.7;
+  }
+  .content {
+    margin-top: 140px;
+  }
+
+  .hitokoto-show {
+    background-image: image-url("cropTS12.jpg");
+    background-size: cover;
+
+  }
+
+ }
+
+ @media (max-width: 1028px) and (min-width: 468px){
+
+  #hitokoto-new {
+    background-image: image-url("cropbabyFTHG77.jpg");
+    opacity: 0.7;
+  }
+  .content {
+    margin-top: 200px;
+  }
+
+  .hitokoto-show {
+    background-image: image-url("cropTS12.jpg");
+    background-size: contain;
+  }
+ }

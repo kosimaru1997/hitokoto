@@ -1,2 +1,39 @@
-<h1>Hitokoto#show</h1>
-<p>Find me in app/views/hitokoto/show.html.erb</p>
+<div class="hitokoto-show">
+  <div class="back-show">
+  <h2>ひとこと:<%= @post.post%></h2>
+  <h2>パーソナリティ:<%= @post.personality_title%></h2>
+
+    <div class='wrapper'>
+      <div class='bar'>
+        <div class='bar-info html' data-total='<%= @post.score %>'>
+          <p class="graph-width"><%= @post.sentiment %></p>
+          <span class='percent'><%= @post.score %></span>
+        </div>
+      </div>
+
+      <div class='bar'>
+        <div class='bar-info css' data-total='<%= @post.magnitude %>'>
+          <p class="graph-width">感性</p>
+          <span class='percent'><%= @post.magnitude %></span>
+        </div>
+      </div>
+
+      <div class='bar'>
+        <div class='bar-info js' data-total='<%= @post.random_int1 %>'>
+          <p class="graph-width"><%= @post.personality1 %></p>
+          <span class='percent'><%= @post.random_int1 %></span>
+        </div>
+      </div>
+
+      <div class='bar'>
+        <div class='bar-info ps' data-total='<%= @post.random_int2 %>'>
+          <p class="graph-width"><%= @post.personality2 %></p>
+          <span class='percent'><%= @post.random_int2 %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
