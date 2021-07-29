@@ -7,6 +7,7 @@ class HitokotoController < ApplicationController
     post = Post.new(post_params)
     post.set_sentiment_with_title
     post.set_int_with_personality
+    post.set_bournus
     if post.save
       redirect_to hitokoto_path(post)
     else
