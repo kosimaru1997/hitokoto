@@ -9,7 +9,8 @@ PostgreSQL 13.3
 おひとこと(https://ohitokoto.herokuapp.com/)  
 
 Natural Language APIの使用を目的としたクソアプリです。
-とにかく早く作るを意識して作成しました。
+とにかく早く作るを意識して作成しました。  
+一応レスポンシブ対応しています。
   
  
 
