@@ -13,7 +13,7 @@ class Post < ApplicationRecord
       self.sentiment = "ポジティブ"
       self.score = sentiment[:score]
     elsif sentiment[:score] >= -50
-      title = ["ポンコツbaby", "インテリくそ陰キャ","人間性皆無自己中人間", "おたんこなすび", "詐欺師", "ぴえん越えてぱおん", "屁理屈ガイコツ", "元気出せよ💓", "孤高の天才"]
+      title = ["ポンコツbaby", "インテリくそ陰キャ","人間性皆無自己中人間", "おたんこなすび", "詐欺師", "ぴえん越えてぱおん", "だめだこりゃ", "元気出せよ💓", "あほ"]
       self.sentiment = "ネガティブ"
       self.score = sentiment[:score]*-1
     else
