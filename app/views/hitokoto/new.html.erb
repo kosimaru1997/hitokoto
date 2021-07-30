@@ -12,12 +12,15 @@
     <p>ひとことおねがいします(３文字以上２０文字以下)</p>
     <p>↓</p>
     <%= form_with model: @post, url: hitokoto_index_url, class: "rubbish-form" do |f| %>
+    <div class="text-form">
       <%= f.text_field :post, placeholder: "楽しい", size: "30x20" %>
-      <%= submit_tag "chuck out" %>
+    </div>
+      <%= submit_tag "そうしん" %>
     <% end %>
     <div class="history">
       <%= link_to "ひとこといちらん", hitokoto_index_url%>
     </div>
+    <p id="notice"><%= notice %></p>
     <div class="text-left"><p class="text-small">ばぶ〜</p></div>
   </div>
 

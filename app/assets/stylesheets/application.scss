@@ -20,6 +20,27 @@
   font-family: 'Hiragino Maru Gothic ProN';
 }
 
+.mx-auto {
+  margin: 70px auto;
+  text-align: center;
+  width: 30%;
+  background-color: whitesmoke;
+  opacity: 0.7;
+  border-radius: 50px;
+}
+.mr {
+  margin-right: 20px;
+}
+
+#notice {
+  max-width: 60%;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  opacity: 0.7;
+}
+
 #hitokoto-new {
   min-height: 100vh;
   margin-left: 0;
@@ -42,6 +63,10 @@
     .history {
       margin-top: 20px;
     }
+  }
+
+  .text-form {
+    margin-bottom: 10px;
   }
   
 }
@@ -204,6 +229,10 @@ $purp: #9f68d0;
 }
 
 @media screen and (max-width: 468px){
+
+  .mx-auto {
+    width: 70%;
+  }
 
   #hitokoto-new {
     background-image: image-url("cropbabyFTHG77.jpg");
