@@ -11,6 +11,9 @@ PostgreSQL 13.3
 Natural Language APIの使用を目的としたクソアプリです。
 とにかく早く作るを意識して作成しました。  
 一応レスポンシブ対応しています。
+
+簡単に作成内容をQiitaに投稿しました。  
+https://qiita.com/kosimaru1997/items/ed4f9c18275c464d52e0  
   
  
 
